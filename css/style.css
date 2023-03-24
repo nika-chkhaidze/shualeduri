@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background-color: #C3C3C3;
+}
+
+ul{
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+    padding-top: 54px;
+}
+
+@media screen and (min-width: 768px){
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000E5;
+}
+
+.logo{
+    padding-top: 54px;
+}
+
+.navbar button{
+    margin-top: 54px;
+    background-color: #29B24E;
+    color: #fff;
+    padding: 13px 26px;
+    border-radius: 15px;
+    border: none;
+}
+
+.main-img{
+    max-width: 1225px;
+    width: 70%;
+    height: 790px;
+    margin: auto;
+    padding-top: 45px;
+}
+
+.inp-div{
+    padding-bottom: 10px;
+}
+
+#select{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 15px;
+    padding: 10px 80px;
+}
+
+.Location{
+    padding-bottom: 20px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+form h2{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.sidebar{
+    margin: auto;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 45px;
+}
+
+.card1-text{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13px;
+}
+
+.card1{
+    background-color: #F8F8F8;
+    border-radius: 15px;
+    max-width: fit-content;
+}
+
+.p-bed-count{
+    display: flex;
+    gap: 63px;
+    justify-content: center;
+    padding: 24px 20px;
+}
+
+.card1 button{
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-left: 320px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.button1{
+    max-width: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.img-1{
+    padding: 16px;
+}
+
+.card1-text h5{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.card1-text :first-child{
+    color: #29B24E;
+    padding-right: 5px;
+}
+
+.card1 h6{
+    
+}
+
+}
+
+
