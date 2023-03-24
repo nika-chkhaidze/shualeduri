@@ -45,14 +45,15 @@ a{
 
 .main-img{
     max-width: 1225px;
-    width: 70%;
-    height: 790px;
+    width: 80%;
+    height: 778px;
     margin: auto;
     padding-top: 45px;
 }
 
 .inp-div{
     padding-bottom: 10px;
+    display: flex;
 }
 
 #select{
@@ -73,7 +74,7 @@ a{
     
 }
 
-form h2{
+form :first-child{
     padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -82,7 +83,7 @@ form h2{
     margin: auto;
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 30px;
+    padding: 30px 30px 35px 30px;
     margin-top: 45px;
 }
 
@@ -92,7 +93,14 @@ form h2{
     padding-right: 13px;
 }
 
-.card1{
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
     background-color: #F8F8F8;
     border-radius: 15px;
     max-width: fit-content;
@@ -105,7 +113,14 @@ form h2{
     padding: 24px 20px;
 }
 
-.card1 button{
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button,
+.card6 button,
+.card7 button,
+.card8 button {
     border: none;
     background-color: #ffffff;
     padding: 15px;
@@ -125,23 +140,36 @@ form h2{
     padding: 16px;
 }
 
-.card1-text h5{
+.card1-text h5,
+.card2-text h5,
+.card3-text h5,
+.card4-text h5,
+.card5-text h5,
+.card6-text h5,
+.card7-text h5,
+.card8-text h5{
     padding-top: 5px;
     padding-left: 5px;
 }
 
-.card1-text :first-child{
+.card1-text,
+.card2-text,
+.card3-text,
+.card4-text,
+.card5-text,
+.card6-text,
+.card7-text,
+.card8-text :first-child{
     color: #29B24E;
     padding-right: 5px;
 }
 
-.card1 h6{
+.card1 h5{
     
 }
 
 .cards{
-    display: grid;
-    grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
+    display: flex;
 }
 
 .sell-btn{
@@ -150,4 +178,83 @@ form h2{
 
 }
 
+.inp-div1 h2{
+    padding: 13px 0;
+}
 
+.price{
+    padding: 39px 0 13px 0;
+}
+
+input[type=checkbox]{
+
+    accent-color: #29b24e;
+
+
+}
+
+input{
+    padding-right: 10px;
+}
+
+.cards{
+    display: grid;
+    gap: 15px;
+    justify-content: center;
+    grid-template-columns: 400px 400px 400px 400px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: 
+    "card1 card2 card3 card4"
+    "card5 card6 card7 card8";
+    padding-top: 20px;
+}
+
+.card1{
+    grid-area: card1;
+}
+
+.card2{
+    grid-area: card2;
+}
+
+.card3{
+    grid-area: card3;
+}
+
+.card4{
+    grid-area: card4;
+}
+
+.card5{
+    grid-area: card5;
+}
+
+.card6{
+    grid-area: card6;
+}
+
+.card7{
+    grid-area: card7;
+}
+
+.card8{
+    grid-area: card8;
+}
+
+.sidebar p{
+    opacity: 0.6;
+    padding-left: 5px;
+}
+
+.card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p,
+.card7 p,
+.card8 p, h5{
+    padding-left: 10px;
+}
+
+}
