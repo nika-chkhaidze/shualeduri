@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "poppins";
+    overflow-x: hidden;
 }
 
 @font-face{
@@ -222,43 +223,43 @@ input{
 
 .card1{
     grid-area: card1;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .card2{
     grid-area: card2;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .card3{
     grid-area: card3;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .card4{
     grid-area: card4;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .card5{
     grid-area: card5;
-    max-width: 380px;
+    max-width: 320px;
     
 }
 
 .card6{
     grid-area: card6;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .card7{
     grid-area: card7;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .card8{
     grid-area: card8;
-    max-width: 380px;
+    max-width: 320px;
 }
 
 .sidebar p{
@@ -328,12 +329,12 @@ label{
 .copyright{
     display: flex;
     justify-content: center;
-    padding-top: 15px;
+    padding:20px 86px;
 }
 
 .line{
     background-color:#ffffff;
-    max-width: 1238px;
+    max-width: 1232px;
     height: 2px;
     display: flex;
     justify-content: center;
@@ -363,3 +364,248 @@ footer p{
 
 
 }
+
+@media screen and (width <= 780px){
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .main-section{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        /* justify-content: center; */
+        margin: auto;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .sidebar{ 
+        background-color: #ffffff;
+        max-width: fit-content;
+        border-radius: 15px;
+        padding: 30px 35px 30px 37px;
+        margin-top: 45px;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-img{
+        height: 435px;
+        max-width: 315px;
+    }
+
+    .card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p,
+.card7 p,
+.card8 p, h5{
+    padding-left: 10px;
+}
+
+.cards{
+    display: grid;
+    gap: 10px;
+    /* justify-content: center; */
+}
+
+.card1{
+    grid-area: card1;
+    max-width: 320px;
+    justify-content: center;
+}
+
+.card2{
+    grid-area: card2;
+    max-width: 320px;
+}
+
+.card3{
+    grid-area: card3;
+    max-width: 320px;
+}
+
+.card4{
+    grid-area: card4;
+    max-width: 320px;
+}
+
+.card5{
+    grid-area: card5;
+    max-width: 320px;
+    
+}
+
+.card6{
+    grid-area: card6;
+    max-width: 320px;
+}
+
+.card7{
+    grid-area: card7;
+    max-width: 320px;
+}
+
+.card8{
+    grid-area: card8;
+    max-width: 320px;
+}
+
+
+.img-1{
+    padding: 16px;
+    max-width: 360px;
+    width: 100%;
+}
+
+.card1-text h5,
+.card2-text h5,
+.card3-text h5,
+.card4-text h5,
+.card5-text h5,
+.card6-text h5,
+.card7-text h5,
+.card8-text h5{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.card1-text,
+.card2-text,
+.card3-text,
+.card4-text,
+.card5-text,
+.card6-text,
+.card7-text,
+.card8-text :first-child{
+    color: #29B24E;
+    padding-right: 5px;
+}
+
+.cards{
+    padding-bottom: 144px;
+}
+
+.card1-text{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
+    background-color: #F8F8F8;
+    border-radius: 15px;
+}
+
+.p-bed-count{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 27px 20px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button,
+.card6 button,
+.card7 button,
+.card8 button {
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-left: 270px;
+    margin-top: -80px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.footer-div-1{
+    display: flex;
+    justify-content:space-around;
+    margin-top: -35px;
+    margin-bottom: 30px;
+}
+
+
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.line{
+    background-color:#ffffff;
+    max-width: 350px;
+    width: 97%;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    margin-left: 4px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #29b24e;
+    height: 179px;
+    border-radius: 25px;
+    max-width: 365px;
+    width: 100%;
+    margin-top: 100px;
+    /* margin: auto; */
+    height: 326px;
+}
+
+.footer-div{
+    padding-top: 80.5px;
+}
+
+footer a,
+footer p :not(.gmail-p){
+    color: #ffffff;
+}
+
+.f1,
+.f2{
+    display: flex;
+    flex-direction: column;
+}
+
+.gmail{
+    display: none;
+}
+
+.footer-div a{
+    padding-top: 20px;
+}
+
+.copyright p{
+    color: #ffffff;
+}
+
+main h2{
+    padding: 32px 0 16px 100px ;
+}
+
+}
+
