@@ -22,13 +22,13 @@ ul{
     padding-top: 54px;
 }
 
-@media screen and (width >= 780px) {
+@media screen and (width <= 1200px) {
 
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 0;
+    /* margin-left: -145px; */
 }
 
 a{
@@ -297,13 +297,12 @@ main img{
 main h2{
     padding-top: 32px;
     padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
+    padding-left: 46 px;
 }
 
 .logo{
     padding-top: 54px;
-    margin-left: -130px;
+    margin-right: 1px;
 }
 
 .inp-div {
@@ -413,7 +412,6 @@ footer p{
 .cards{
     display: grid;
     gap: 10px;
-    /* justify-content: center; */
 }
 
 .card1{
@@ -572,7 +570,6 @@ footer{
     max-width: 365px;
     width: 100%;
     margin-top: 100px;
-    /* margin: auto; */
     height: 326px;
 }
 
