@@ -633,12 +633,13 @@ main h2{
         display: grid;
         justify-content: center;
         grid-template-columns: 325px 325px 325px;
-        grid-template-rows: 480px 480px 480px;
+        grid-template-rows: 475px 475px 475px;
         grid-template-areas: 
         "card1 card2 card3"
         "card5 card6 card7"
         "card4 card8";
         padding-top: 20px;
+        max-width: 1070px;
     }
 
     .card1{
