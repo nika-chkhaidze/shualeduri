@@ -22,7 +22,7 @@ ul{
     padding-top: 54px;
 }
 
-@media screen and (width <= 1200px) {
+/* @media screen and (width <= 1200px) { */
 
 .navbar{
     display: flex;
@@ -136,7 +136,7 @@ form :first-child{
     background-color: #ffffff;
     padding: 15px;
     margin-left: 270px;
-    margin-top: -80px;
+    margin-bottom: 80px;
     margin-right: 20px;
     margin-bottom: 100px;
     display: flex;
@@ -209,16 +209,22 @@ input{
     padding-right: 10px;
 }
 
+a{
+    max-width: fit-content;
+}
+
+@media screen and (width <= 1920px){
 .cards{
     display: grid;
-    gap: 10px;
+    gap: 15px;
     justify-content: center;
     grid-template-columns: 325px 325px 325px 325px;
-    grid-template-rows: 400px 400px;
+    grid-template-rows: 480px 480px;
     grid-template-areas: 
     "card1 card2 card3 card4"
     "card5 card6 card7 card8";
     padding-top: 20px;
+}
 }
 
 .card1{
@@ -290,8 +296,8 @@ main img{
 }
 
 .sell-btn{
-    margin-right: -130px
-    ;
+    /* margin-right: -130px
+    ; */
 }
 
 main h2{
@@ -316,7 +322,7 @@ label{
 .footer-div-1{
     display: flex;
     justify-content:space-around;
-    margin-top: -35px;
+    /* margin-top: -35px; */
     margin-bottom: 30px;
 }
 
@@ -333,7 +339,7 @@ label{
 
 .line{
     background-color:#ffffff;
-    max-width: 1232px;
+    max-width: 1252px;
     height: 2px;
     display: flex;
     justify-content: center;
@@ -344,9 +350,9 @@ label{
 
 footer{
     background-color: #29b24e;
-    height: 179px;
+    height: 240px;
     border-radius: 25px;
-    max-width: 1425px;
+    max-width: 1525px;
     width: 100%;
     margin-top: 100px;
     margin: auto;
@@ -362,10 +368,9 @@ footer p{
 }
 
 
-}
+/* } */
 
 @media screen and (width <= 780px){
-
     a{
         text-decoration: none;
         color: black;
@@ -374,11 +379,12 @@ footer p{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        /* justify-content: center; */
+        justify-content: center;
         margin: auto;
     }
 
-    .navbar{
+    .navbar ul,
+    .navbar button{
         display: none;
     }
 
@@ -390,12 +396,13 @@ footer p{
         margin-top: 45px;
         height: fit-content;
         display: flex;
-        justify-content: center;
+        margin: auto;
     }
 
     .main-img{
         height: 435px;
         max-width: 315px;
+        width: 100%;
     }
 
     .card1 p,
@@ -410,14 +417,17 @@ footer p{
 }
 
 .cards{
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
     gap: 10px;
+
+
 }
 
 .card1{
     grid-area: card1;
     max-width: 320px;
-    justify-content: center;
 }
 
 .card2{
@@ -507,7 +517,9 @@ footer p{
 .card8{
     background-color: #F8F8F8;
     border-radius: 15px;
+    margin: auto;
 }
+
 
 .p-bed-count{
     display: flex;
@@ -528,7 +540,8 @@ footer p{
     background-color: #ffffff;
     padding: 15px;
     margin-left: 270px;
-    margin-top: -80px;
+    /* margin-top: -80px; */
+    margin-bottom: 200px;
     margin-right: 20px;
     margin-bottom: 100px;
     display: flex;
@@ -539,7 +552,7 @@ footer p{
 .footer-div-1{
     display: flex;
     justify-content:space-around;
-    margin-top: -35px;
+    /* margin-top: -35px; */
     margin-bottom: 30px;
 }
 
@@ -604,5 +617,70 @@ main h2{
     padding: 32px 0 16px 100px ;
 }
 
+.p-bed-count{
+   align-items: center;
+}
+
+.navbar{
+    margin-right: 216px;
+}
+
+
+}
+
+@media screen and (width <= 1024px){
+    .cards{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 325px 325px 325px;
+        grid-template-rows: 480px 480px 480px;
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card5 card6 card7"
+        "card4 card8";
+        padding-top: 20px;
+    }
+
+    .card1{
+        grid-area: card1;
+        max-width: 320px;
+    }
+    
+    .card2{
+        grid-area: card2;
+        max-width: 320px;
+    }
+    
+    .card3{
+        grid-area: card3;
+        max-width: 320px;
+    }
+    
+    .card4{
+        grid-area: card4;
+        max-width: 320px;
+    }
+    
+    .card5{
+        grid-area: card5;
+        max-width: 320px;
+        
+    }
+    
+    .card6{
+        grid-area: card6;
+        max-width: 320px;
+    }
+    
+    .card7{
+        grid-area: card7;
+        max-width: 320px;
+    }
+    
+    .card8{
+        grid-area: card8;
+        max-width: 320px;
+    }
+    
 }
 
