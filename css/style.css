@@ -64,13 +64,10 @@ ul{
     padding-top: 54px;
 }
 
-/* @media screen and (width <= 1200px) { */
-
 .navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* margin-left: -145px; */
 }
 
 a{
@@ -81,8 +78,6 @@ a{
 main h2{
     padding-left: 52px;
 }
-
-
 
 .navbar button{
     margin-top: 54px;
@@ -143,7 +138,7 @@ form :first-child{
 .text{
     position: absolute;
     bottom: 550px;
-    left: 40px;
+    left: 40spx;
 }
 
 .sb{
@@ -215,9 +210,6 @@ form :first-child{
 
 .button1{
     max-width: 18px;
-    /* margin-right: 5px; */
-    /* display: flex;
-    align-items: center; */
 }
 
 .img-1{
@@ -306,7 +298,6 @@ a{
     gap: 15px;
     justify-content: center;
     grid-template-columns: 325px 325px 325px 325px;
-    /* grid-template-rows: 480px 480px; */
     grid-template-areas: 
     "card1 card2 card3 card4"
     "card5 card6 card7 card8";
@@ -315,7 +306,7 @@ a{
 
 .text{
     position: absolute;
-    bottom: 450px;
+    bottom: 350px;
     left: 750px;
 }
 
@@ -332,13 +323,6 @@ a{
     padding-top: 30px;
     padding-left: 15px;
 }
-
-}
-
-
-
-
-
 
 .card1{
     grid-area: card1;
@@ -487,9 +471,9 @@ footer p{
 }
 
 
-/* } */
+}
 
-@media screen and (width <= 780px){
+@media screen and (width <= 768px){
     a{
         text-decoration: none;
         color: black;
@@ -756,60 +740,107 @@ main h2{
 }
 
 @media screen and (width <= 1024px){
-    .cards{
-        justify-content: center;
-        padding-top: 20px;
+
+    .p-bed-count p{
+        padding: 0;
     }
+
+    .text{
+        position: absolute;
+        bottom: 1000px;
+        left: 381px;
+    }
+
+    .img-1{
+        max-width: 230px;
+    }
+
+    .p-bed-count{
+        gap: 20px;
+    }
+    
+    .card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button,
+.card6 button,
+.card7 button,
+.card8 button {
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+    left: 160px;
+    bottom: 165px;
+}
+
+    .cards{
+            justify-content: center;
+            padding-top: 20px;
+            display: grid;
+            flex-direction: column;
+            grid-template-columns: 230px 230px 230px 230px ;
+            grid-template-areas: 
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+            margin: auto;
+            /* gap: 10px; */
+            grid-template-rows: auto;
+        
+        }
 
     .card1{
         grid-area: card1;
-        max-width: 320px;
+        max-width: 230px;
     }
     
     .card2{
         grid-area: card2;
-        max-width: 320px;
+        max-width: 230px;
     }
     
     .card3{
         grid-area: card3;
-        max-width: 320px;
+        max-width: 230px;
     }
     
     .card4{
         grid-area: card4;
-        max-width: 320px;
+        max-width: 230px;
     }
     
     .card5{
         grid-area: card5;
-        max-width: 320px;
+        max-width: 230px;
         
     }
     
     .card6{
         grid-area: card6;
-        max-width: 320px;
+        max-width: 230px;
     }
     
     .card7{
         grid-area: card7;
-        max-width: 320px;
+        max-width: 230px;
     }
     
     .card8{
         grid-area: card8;
-        max-width: 320px;
+        max-width: 230px;
     }
 
     footer{
         background-color: #29b24e;
         height: 179px;
         border-radius: 25px;
-        max-width: 365px;
+        max-width: 1023px;
         width: 100%;
         margin-top: 100px;
-        height: 500px;
+        height: 250px;
     }
     
     .gmail{
@@ -822,9 +853,10 @@ main h2{
         padding: 0;
     }
 
-    footer{
-        max-width: 780px;
+    body{
+        max-width: 1023px;
     }
+    
 
     .line{
         background-color:#ffffff;
@@ -857,9 +889,17 @@ main h2{
     }
 
     .logo{
-        margin-right: 350px;
+        margin-right: 0px;
     }
 
+    .navbar button{
+        margin-left: 110px;
+    }
+
+    .sidebar{
+        max-width: 1023px;
+        width: 100%;
+    }
   
 }
 
@@ -867,6 +907,7 @@ main h2{
     
     body{
         overflow-x: hidden;
+        max-width: 379px;
     }
 
     .sidebar{
@@ -893,43 +934,43 @@ main h2{
 
     .card1{
         grid-area: card1;
-        max-width: 379px;
+        max-width: 359px;
     }
     
     .card2{
         grid-area: card2;
-        max-width: 379px;
+        max-width: 359px;
     }
     
     .card3{
         grid-area: card3;
-        max-width: 379px;
+        max-width: 359px;
     }
     
     .card4{
         grid-area: card4;
-        max-width: 379px;
+        max-width: 359px;
     }
     
     .card5{
         grid-area: card5;
-        max-width: 379px;
+        max-width: 359px;
         
     }
     
     .card6{
         grid-area: card6;
-        max-width: 379px;
+        max-width: 359px;
     }
     
     .card7{
         grid-area: card7;
-        max-width: 379px;
+        max-width: 359px;
     }
     
     .card8{
         grid-area: card8;
-        max-width: 379px;
+        max-width: 359px;
     }
 
     
@@ -953,7 +994,7 @@ main h2{
     .cards{
         display: grid;
         flex-direction: column;
-        grid-template-columns: 360px;
+        grid-template-columns: 359px;
         grid-template-areas: 
         "card1"
         "card2"
@@ -1003,7 +1044,6 @@ main h2{
 
 .nav2{
     display: flex;
-    /* gap: 150px; */
     background-color: #ffffff;
     padding-left: 60px;
     border-top-left-radius: 25px;
@@ -1034,7 +1074,7 @@ main h2{
 }
 
 footer{
-    max-width: 379px;
+    width: 379px;
     margin: 0;
     height: 370px;
     margin-bottom: 124px;
@@ -1097,14 +1137,10 @@ main h2{
     top: 20px;
 }
 
-/* .nav2{
-    font-size: small;
-} */
-
 .text{
     position: absolute;
-    top: 200px;
-    left: 30px;
+    top: 40px;
+    left: 180px;
 }
 
 .text h5{
@@ -1145,6 +1181,95 @@ main h2{
 .logo{
     padding-right: 50px;
     margin: 0;
+}
+
+.nav2{
+    width: 379px;
+}
+
+}
+
+@media screen and (width <= 680px){
+    footer{
+        width: 677px;
+        height: 500px;
+    }
+
+    .sidebar{
+        margin-left: 90px;
+    }
+
+    .main-section{
+        margin: auto;
+        flex-wrap: nowrap;
+    }
+
+    .main-img{
+        margin-left: 90px;
+    }
+
+    .cards{
+        justify-content: center;
+        padding-top: 20px;
+        display: grid;
+        flex-direction: column;
+        grid-template-columns: 210px 210px 210px ;
+        grid-template-areas: 
+        "card1 card2 card3"
+        "card4 card5 card6";
+        padding-left: 165px;
+        grid-template-rows: auto;
+    
+    }
+
+.card1{
+    grid-area: card1;
+    max-width: 210px;
+}
+
+.card2{
+    grid-area: card2;
+    max-width: 210px;
+}
+
+.card3{
+    grid-area: card3;
+    max-width: 210px;
+}
+
+.card4{
+    grid-area: card4;
+    max-width: 210px;
+}
+
+.card5{
+    grid-area: card5;
+    max-width: 210px;
+    
+}
+
+.card6{
+    grid-area: card6;
+    max-width: 210px;
+}
+
+.card7,
+.card8{
+    display: none;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button,
+.card6 button{
+
+    left: 140px;
+}
+
+.logo{
+    display: none;
 }
 
 }

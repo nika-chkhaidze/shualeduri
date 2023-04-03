@@ -136,7 +136,7 @@ body{
     padding-bottom: 144px;
 }
 
-@media screen and (width <= 1920px){
+@media screen and (width <= 1500px){
     .cards{
         display: grid;
         justify-content: center;
@@ -719,7 +719,6 @@ footer{
     padding: 20px 0;
     gap: 36px;
     text-align: center;
-    position: absolute;
     width: 100%;
 }
 
