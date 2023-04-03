@@ -3,12 +3,40 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "poppins";
+}
+
+body{
     overflow-x: hidden;
 }
+
+.frame{
+    display: none;
+}
+
 
 @font-face{
     font-family: poppins;
     src:url(fonts/Poppins);
+}
+
+.vip p{
+    background-color:#29B24E;
+    color: #ffffff;
+    max-width: fit-content;
+    border-radius: 25px;
+    padding: 7px 11px;
+    left: 25px;
+    top: 25px;
+    z-index: 1;
+    position: absolute;
+}
+
+.img-1{
+    position: relative;
+}
+
+.nav2{
+    display: none;
 }
 
 .shearch-logo{
@@ -99,7 +127,33 @@ form :first-child{
     height: 900px;
     padding-top: 45px;
     height: 790px;
+    position: relative;
 }
+
+.text{
+    position: absolute;
+    bottom: 550px;
+    left: 40px;
+}
+
+.sb{
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.text h5{
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.shearch-bar{
+    position: absolute;
+    top: -20px;
+}
+
 .main-section{
     display: flex;
     flex-direction: row-reverse;
@@ -248,7 +302,31 @@ a{
     "card5 card6 card7 card8";
     padding-top: 20px;
 }
+
+.text{
+    position: absolute;
+    bottom: 450px;
+    left: 750px;
 }
+
+.sb{
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 15px 30px;
+}
+
+.text h5{
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+}
+
+
+
 
 
 
@@ -374,7 +452,7 @@ label{
     height: 2px;
     display: flex;
     justify-content: center;
-    margin-left: 94px;
+    margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -560,7 +638,7 @@ footer p{
 .card7,
 .card8{
     background-color: #F8F8F8;
-    border-radius: 15px;
+    border-radius: 25px;
     margin: auto;
 }
 
@@ -610,7 +688,7 @@ footer p{
     height: 2px;
     display: flex;
     justify-content: center;
-    margin-left: 4px;
+    margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -745,7 +823,7 @@ main h2{
         height: 2px;
         display: flex;
         justify-content: center;
-        margin-left: 20px;
+        margin: auto;
         margin-bottom: 20px;
         margin-top: 20px;
     }
@@ -776,8 +854,26 @@ main h2{
 }
 
 @media screen and (width <= 380px){
+    
+    body{
+        overflow-x: hidden;
+    }
+
+    .sidebar{
+        max-width: 360px;
+    }
+
     .main-section{
         display: flex;
+        max-width: 379px;
+        margin: 0;
+    }
+
+    .main-img{
+        margin: 0;
+        max-width: 345px;
+        padding: 0 0 50px 0;
+        margin: auto;
     }
 
     .cards{
@@ -787,45 +883,63 @@ main h2{
 
     .card1{
         grid-area: card1;
-        max-width: 360px;
+        max-width: 379px;
     }
     
     .card2{
         grid-area: card2;
-        max-width: 360px;
+        max-width: 379px;
     }
     
     .card3{
         grid-area: card3;
-        max-width: 360px;
+        max-width: 379px;
     }
     
     .card4{
         grid-area: card4;
-        max-width: 360px;
+        max-width: 379px;
     }
     
     .card5{
         grid-area: card5;
-        max-width: 360px;
+        max-width: 379px;
         
     }
     
     .card6{
         grid-area: card6;
-        max-width: 360px;
+        max-width: 379px;
     }
     
     .card7{
         grid-area: card7;
-        max-width: 360px;
+        max-width: 379px;
     }
     
     .card8{
         grid-area: card8;
-        max-width: 360px;
+        max-width: 379px;
     }
 
+    
+    .card1 button,
+    .card2 button,
+    .card3 button,
+    .card4 button,
+    .card5 button,
+    .card6 button,
+    .card7 button,
+    .card8 button {
+        border: none;
+        background-color: #ffffff;
+        padding: 15px;
+        align-items: center;
+        border-radius: 50px;
+        position: absolute;
+        left: 285px;
+        bottom: 155px;
+    }
     .cards{
         display: grid;
         flex-direction: column;
@@ -834,7 +948,7 @@ main h2{
         "card1"
         "card2"
         "card3"
-        "card4"
+        "card4" 
         "card5"
         "card6"
         "card7"
@@ -844,50 +958,183 @@ main h2{
         justify-content: center;
 }
 
-.card1 button,
-.card2 button,
-.card3 button,
-.card4 button,
-.card5 button,
-.card6 button,
-.card7 button,
-.card8 button {
-    border: none;
-    background-color: #ffffff;
-    /* padding: 15px; */
-    align-items: center;
-    border-radius: 50px;
-    position: absolute;
-    left: 280px;
-    bottom: 150px;
-}
-
 .vip{
-    position: relative;
-    background-color:#29B24E;
     color: #ffffff;
     max-width: fit-content;
     border-radius: 25px;
-    padding: 8px 11px;
+    padding: 6px 11px;
     left: 20px;
-    bottom: -60px;
+    bottom: -18px;
     z-index: 1;
 }
 
 .shearch-logo{
     display: flex;
     height: 40px;
-    width: 260px;
     background-color: #F8F8F8;
     border-radius: 50px;
     padding: 5px;
-    margin-top: 50px;
+    margin-top: 60px;
+    position: absolute;
+    left: 310px;
 }
 
 .nav-imgs{
     display: flex;
     justify-content: space-between;
     gap: 50px;
+}
+
+.img-1{
+    margin-top: -35px;
+}
+
+
+
+.nav2{
+    display: flex;
+    /* gap: 150px; */
+    background-color: #ffffff;
+    padding-left: 60px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 15px;
+    padding-bottom: 38px;
+}
+
+.nav-svg1,
+.nav-svg2{
+    display: flex;
+    gap: 40px;
+}
+
+
+.shearch-bar{
+    position: absolute;
+    top: -20px;
+}
+
+.sb{
+    display: none;
+}
+
+.img-1{
+    margin-top: -10px;
+    padding-bottom: 25px;
+}
+
+footer{
+    max-width: 379px;
+    margin: 0;
+    height: 370px;
+    margin-bottom: 124px;
+}
+
+.gmail p{
+    display: none;
+}
+
+.nav2{
+    display: flex;
+    gap: 65px;
+    max-width: 379px;
+    height: 90px;
+    padding-left: 35px;
+}
+
+.footer-div-1 div{
+    display: flex;
+    gap :20px;
+    margin: 0;
+}
+
+.footer-div{
+    padding: 30px 0px 0px 0px;
+}
+
+.line{
+    background-color:#ffffff;
+    max-width: 750px;
+    width: 92%;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+main h2{
+    padding: 32px 0 16px 85px;
+}
+.frame{
+    display: flex;
+    background-color: #29B24E;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 50px;
+    max-width: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 110px;
+    left: 160px;
+}
+
+.nav-svg1,
+.nav-svg2{
+    max-width: 100px;
+    position: relative;
+    top: 20px;
+}
+
+/* .nav2{
+    font-size: small;
+} */
+
+.text{
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+.text h5{
+    opacity: unset;
+    padding-bottom: 30px;
+    display: flex;
+    padding-left: 0;
+}
+
+.sidebar{
+    max-width: 360px;
+}
+
+
+
+#select{
+    padding: 10px 75px 10px 75px;
+}
+
+.text h1{
+    font-size:1.4em;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text h5{
+    font-size:0.8em;
+    padding-left: 35px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.frame{
+    display: flex;
+}
+
+.logo{
+    padding-right: 50px;
+    margin: 0;
 }
 
 }

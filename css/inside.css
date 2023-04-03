@@ -1,0 +1,728 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+
+
+.main-div p{
+    padding-top: 20px;
+}
+
+ul{
+    display: flex;
+    gap: 48px;
+    list-style-type: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+}
+
+a{
+    text-decoration: none;
+    color: #000000E5;
+}
+
+.navbar button{
+    background-color: #29B24E;
+    color: #fff;
+    padding: 13px 26px;
+    border-radius: 15px;
+    border: none;
+    margin-left: 425px;
+}
+
+.sa{
+    padding-left: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo{
+    margin-right: 360px;
+}
+
+.shearch-logo{
+    display: none;
+}
+
+body{
+    background-color: #C3C3C3;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button {
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.card1-text h5,
+.card2-text h5,
+.card3-text h5,
+.card4-text h5,
+.card5-text h5,
+.card6-text h5,
+.card7-text h5,
+.card8-text h5{
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button,
+.card5 button,
+.card6 button,
+.card7 button,
+.card8 button {
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 50px;
+    position: absolute;
+    left: 275px;
+    bottom: 140px;
+}
+
+.card1-text,
+.card2-text,
+.card3-text,
+.card4-text,
+.card5-text,
+.card6-text,
+.card7-text,
+.card8-text :first-child{
+    color: #29B24E;
+    padding-right: 5px;
+}
+
+.cards{
+    display: flex;
+    padding-bottom: 144px;
+}
+
+@media screen and (width <= 1920px){
+    .cards{
+        display: grid;
+        /* gap: 5px; */
+        justify-content: center;
+        grid-template-columns: 355px 355px 355px 355px;
+        grid-template-areas: 
+        "card1 card2 card3 card4";
+        padding-top: 20px;
+    }
+
+
+    .card1{
+        grid-area: card1;
+        max-width: 345px;
+        position: relative;
+    }
+    
+    .card2{
+        grid-area: card2;
+        max-width: 345px;
+        position: relative;
+    }
+    
+    .card3{
+        grid-area: card3;
+        max-width: 345px;
+        position: relative;
+    }
+    
+    .card4{
+        grid-area: card4;
+        max-width: 345px;
+        position: relative;
+    }
+    
+    .card5{
+        grid-area: card5;
+        max-width: 345px;
+        position: relative;
+    }
+    
+    .card6{
+        grid-area: card6;
+        max-width: 345px;
+        position: relative;
+    }
+    
+    .card7{
+        grid-area: card7;
+        max-width: 365px;
+        position: relative;
+    }
+    
+    .card8{
+        grid-area: card8;
+        max-width: 345px;
+        position: relative;
+    }
+}
+
+    .card1 p,
+.card2 p,
+.card3 p,
+.card4 p,
+.card5 p,
+.card6 p,
+.card7 p,
+.card8 p, h5{
+    padding-left: 10px;
+}
+
+h5{
+    color: black;
+    opacity: 0.5;
+}
+
+.card1-text{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 13px;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
+    background-color: #F8F8F8;
+    border-radius: 25px;
+    margin: auto;
+}
+
+.p-bed-count{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    padding: 27px 20px;
+}
+
+.card1 button,
+.card2 button,
+.card3 button,
+.card4 button {
+    border: none;
+    background-color: #ffffff;
+    padding: 15px;
+    align-items: center;
+    border-radius: 50px;
+    position: absolute;
+}
+
+.vip{
+    position: relative;
+    background-color:#29B24E;
+    color: #ffffff;
+    max-width: fit-content;
+    max-height: fit-content;
+    border-radius: 25px;
+    padding:18px 9px 5px 7px;
+    left: 25px;
+    bottom: -25px;
+    z-index: 1;
+}
+.vip p{
+    position: relative;
+    bottom: 5px;
+}
+
+
+.img-1{
+    max-width: 385px;
+    width: 100%;
+    padding: 16px;
+    margin-top: -40px;
+}
+
+.faded{
+    opacity: 0.5;
+}
+
+.main-section{
+    display: flex;
+    border-radius: 25px;
+}
+
+.main-div{
+    background-color: #ffffff;
+    max-width: fit-content;
+    border-radius: 20px;
+    height: 615px;
+    margin-top: 55px;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.main-section img{
+    max-width: 710px;
+    height: 732px;
+}
+
+.p{
+    display: flex;
+}
+
+
+.main-div2{
+    display: flex;
+}
+
+.facilitis{
+    max-width: 180px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.prc{
+    display: flex;
+    align-items: flex-end;
+    padding-left: 50px;
+    /* padding-top: 100px; */
+}
+
+.prc p{
+    display: flex;
+    padding-bottom: 8px;
+}
+
+.last-div{
+    display: flex;
+    align-items: flex-end;
+}
+
+.div-p{
+    display: flex;
+    gap: 50px;
+}
+
+.call{
+    background-color:#29B24E;
+    border-radius: 15px;
+    padding-left:5px;
+    padding: 10px 30px;
+}
+
+.sm{
+    background-color:#ffffff;
+    color: #29B24E;
+    border: 1px solid #29B24E;
+    border-radius: 15px;
+    padding-left:5px;
+    padding: 10px 30px;
+}
+
+.prc h1{
+    color: #29B24E;
+}
+
+.prc p{
+    padding-right: 170px;
+}
+
+.main-div p,
+.main-div h2{
+    padding-left: 30px;
+}
+
+.sm p,
+.call p{
+    padding: 0;
+}
+
+.call p{
+    color:#ffffff;
+}
+
+.footer-div-1{
+    display: flex;
+    justify-content:space-around;
+    /* margin-top: -35px; */
+    margin-bottom: 30px;
+}
+
+.footer-div-1 div{
+    display: flex;
+    gap: 48px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    padding:20px 86px;
+}
+
+.line{
+    background-color:#ffffff;
+    max-width: 1252px;
+    height: 2px;
+    display: flex;
+    justify-content: center;
+    margin-left: 87px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #29b24e;
+    height: 240px;
+    border-radius: 25px;
+    max-width: 1525px;
+    width: 100%;
+    margin-top: 100px;
+    margin: auto;
+}
+
+.footer-div{
+    padding-top: 80.5px;
+    background-color: #29B24E;
+    border-radius: 25px; 
+    padding-bottom: 50px;
+}
+
+footer a,
+footer p{
+    color: #ffffff;
+}
+
+.button{
+    background-color: #29B24E;
+    border-radius: 30px;
+    max-width: fit-content;
+    margin-left: 20px;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.button p{
+    padding-left: 20px;
+    padding: 0;
+    color: #ffffff;
+}
+
+.footer-div a,
+.footer-div p{
+    color: #ffffff;
+}
+
+button{
+    border: none;
+    background-color:#ffffff;
+}
+
+@media screen and (width <= 1024px){
+
+     html,body{
+        overflow-x: hidden;
+     }
+
+     .navbar{
+        display: none;
+     }
+
+     .main-section{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .main-section img{
+        max-width: 1023px;
+        width: 100%;
+        padding-bottom: 42px;
+     }
+
+     .main-div{
+        max-width: 1010px;
+        margin: 0;
+        margin-left: 6px;
+     }
+
+     .cards{
+        display: grid;
+        grid-template-areas:
+        "card1 card2";
+        gap: 10px;
+        grid-template-columns: 390px;
+     }
+
+.card1{
+    grid-area: card1;
+    max-width: 600px;
+}
+
+.card2{
+    grid-area: card2;
+    max-width: 600px;
+}
+
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
+    display: none;
+}
+
+.card1 button,
+.card2  button{
+    left: 310px;
+    bottom: 125px;
+}
+
+.footer-div{
+    max-width: 1023px;
+}
+
+.line{
+    max-width: 1000px;
+    margin: auto;
+}
+
+body{
+    width: 1023px;
+}
+
+.main-div2{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    height: fit-content;
+    max-width: 375px;
+}
+
+.main-div{
+    height: 1500px;
+}
+
+.main-section{
+   height: 1550px;
+   width: 1200px;
+}
+html, body{
+    overflow-x: hidden;
+}
+
+.sa{
+    padding-top: 40px;
+    padding-bottom: 16px;
+}
+
+}
+
+@media screen and (width <= 360px){
+
+    body{
+        max-width: 359px;
+    }
+
+    html, body{
+       overflow-x: hidden;
+    }
+
+    footer{
+        max-width: 359px;
+    }
+
+    .main-div{
+        max-width: 359px;
+    }
+
+    .main-div p{
+        padding-left: 5px;
+    }
+
+    .p{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .prc h1{
+        overflow: visible;
+    }
+
+    .prc p{
+        display: flex;
+    }
+
+    .main-section img{
+        max-width: 355px;
+        height: 316px;
+        margin: 0;
+    }
+
+    .main-section{
+        max-width: 359px;
+    }
+
+    .main-div{
+        max-width: 359px;
+    }
+
+.card1{
+    max-width: 350px;
+    margin: 0 0 0 25px
+}
+
+.card2,
+.card3,
+.card4,
+.card5,
+.card6,
+.card7,
+.card8{
+    display: none;
+}
+
+footer{
+   margin: 0;
+   max-width: 359px;
+   height: fit-content;
+}
+
+.footer-div{
+    max-width: 359px;
+}
+
+.faded-p div{
+    display: flex;
+    justify-content: space-between;
+} 
+
+.facilitis{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.facilitis :first-child{
+    padding-right: 190px;
+}
+
+.footer-div-1 div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.gmail-p{
+    display: none;
+}
+
+.line{
+    max-width: 335px;
+}
+
+.p-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-div{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 55px;
+}
+
+.div-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.call{
+    padding: 10px 145px;
+}
+
+.p{
+    display: flex;
+    flex-direction: row;
+}
+
+.p p{
+    width: 100px;
+}
+
+.main-div h2{
+    padding-left: 5px;
+}
+
+.card1 button{
+    left: 275px;
+    bottom: 140px;
+}
+
+.copyright{
+    padding: 20px 0;
+}
+
+.nav2{
+    display: flex;
+    gap: 55px;
+    background-color: #ffffff;
+    padding-left: 40px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-top: 15px;
+    padding-bottom: 38px;
+    margin-top: 85px;
+    align-items: flex-end;
+}
+
+.nav-svg1,
+.nav-svg2{
+    display: flex;
+    gap: 40px;
+}
+
+
+.shearch-bar{
+    position: absolute;
+    top: -20px;
+}
+
+.frame{
+    display: flex;
+    background-color: #29B24E;
+    color: #ffffff;
+    border-radius: 10px;
+    height: 50px;
+    max-width: 50px;
+    width: 100%;
+    position: relative;
+    bottom: 110px;
+    left: 160px;
+}
+
+.frame{
+    display: flex;
+}
+
+}
