@@ -4,12 +4,28 @@
     box-sizing: border-box;
 }
 
+
 html, body{
     overflow-x: hidden;
 }
 
+.main-section{
+    display: flex;
+    justify-content: center;
+}
+
 .nav2{
     display: none;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.sa{
+    display: flex;
+    justify-content: center;
 }
 
 .main-div p{
@@ -123,7 +139,6 @@ body{
 @media screen and (width <= 1920px){
     .cards{
         display: grid;
-        /* gap: 5px; */
         justify-content: center;
         grid-template-columns: 355px 355px 355px 355px;
         grid-template-areas: 
@@ -213,7 +228,7 @@ h5{
 .card8{
     background-color: #F8F8F8;
     border-radius: 25px;
-    margin: auto;
+    margin: 0;
 }
 
 .p-bed-count{
@@ -304,7 +319,6 @@ h5{
     display: flex;
     align-items: flex-end;
     padding-left: 50px;
-    /* padding-top: 100px; */
 }
 
 .prc p{
@@ -363,7 +377,6 @@ h5{
 .footer-div-1{
     display: flex;
     justify-content:space-around;
-    /* margin-top: -35px; */
     margin-bottom: 30px;
 }
 

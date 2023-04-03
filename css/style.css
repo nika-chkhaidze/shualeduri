@@ -5,6 +5,16 @@
     font-family: "poppins";
 }
 
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+}
+
 body{
     overflow-x: hidden;
 }
