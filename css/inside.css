@@ -8,7 +8,9 @@ html, body{
     overflow-x: hidden;
 }
 
-
+.nav2{
+    display: none;
+}
 
 .main-div p{
     padding-top: 20px;
@@ -529,7 +531,7 @@ html, body{
 }
 
 .sa{
-    padding-top: 295px;
+    padding-top: 400px;
     padding-bottom: 16px;
 }
 
@@ -708,13 +710,6 @@ footer{
     width: 100%;
 }
 
-.nav-svg1,
-.nav-svg2{
-    display: flex;
-    gap: 40px;
-}
-
-
 .shearch-bar{
     position: absolute;
     top: -20px;
@@ -729,7 +724,40 @@ footer{
     max-width: 50px;
     width: 100%;
     position: relative;
-    left: 152px;
+    bottom: 40px;
+}
+
+.nav-h{
+    display: flex;
+    gap: 20px;
+}
+.nav-svg2{
+    display: flex;
+    gap: 20px;
+}
+
+.frame1{
+    display: flex;
+    flex-direction: column;
 }
 
 }
+
+
+@media screen and (width <= 420px){
+    .sa{
+        padding-top: 300px;
+    }
+
+    .p{
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media screen and (width <= 768px){
+    .sa{
+        padding-top: 400px;
+    }
+}
+
